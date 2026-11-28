@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" width="900" height="540" role="img" aria-label="Architecture: a YouTube URL goes into shared/extract_video.py. yt-dlp takes captions through VTT cleanup, or falls back to faster-whisper, and both write transcript.txt. The transcript feeds six skills: /vask, /vrefine, /vdo, /vqueue, /vcompare and /vsteps.">
+  <title>YouTube URL to SKILLS</title>
+  <desc>Flow from a YouTube URL through the extraction engine to the six video skills.</desc>
+  <defs>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="hair-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="0.5" stop-color="#FF0000" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="spec" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#FF0000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-sm" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+    <pattern id="dots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#FFFFFF"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 1 L9 5 L0 9 Z" fill="#71717A"/>
+    </marker>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Segoe UI",Roboto,sans-serif}
+      .mono{font-family:"SF Mono","JetBrains Mono","Fira Code",Consolas,monospace}
+      .card{fill:#121215;fill-opacity:0.85;stroke:url(#hair);stroke-width:1}
+      .node{fill:#18181B;stroke:url(#hair);stroke-width:1}
+      .glass{fill:#18181B;stroke:url(#hair-accent);stroke-width:1}
+      .t{font-size:15px;font-weight:700;fill:#F5F5F7}
+      .d{font-size:13px;fill:#A1A1AA}
+      .e{font-size:12px;font-weight:600;letter-spacing:0.08em;fill:#94949B}
+      .flow{fill:none;stroke:#62626B;stroke-width:1.75}
+      .rule{stroke:#FFFFFF;stroke-opacity:0.06;stroke-width:1}
+      .pulse{fill:none;stroke:#F5F5F7;stroke-width:2.25;stroke-linecap:round;stroke-dasharray:5 95;opacity:0;animation:flow 7s linear infinite}
+      @keyframes flow{0%{stroke-dashoffset:0;opacity:0}4%{opacity:.95}34%{stroke-dashoffset:-100;opacity:.95}40%,100%{stroke-dashoffset:-100;opacity:0}}
+      @media (prefers-reduced-motion: reduce){.pulse{animation:none;opacity:0}}
+    </style>
+  </defs>
+
+  <rect width="900" height="540" fill="#09090B"/>
+  <rect width="900" height="540" fill="url(#dots)" opacity="0.04"/>
+
+  <rect x="40.5" y="112.5" width="819" height="183" rx="16" class="card"/>
+  <rect x="40.5" y="328.5" width="819" height="183" rx="16" class="card"/>
+  <text x="836" y="140" text-anchor="end" class="mono e" letter-spacing="0">shared/extract_video.py</text>
+  <text x="64" y="356" class="sans e">SKILLS</text>
+  <line x1="64" y1="368" x2="836" y2="368" class="rule"/>
+
+  <path d="M450 80 C450 136 140 136 140 184" class="flow" marker-end="url(#arrow)"/>
+  <path d="M216 216 C260 216 260 180 304 180" class="flow" marker-end="url(#arrow)"/>
+  <path d="M216 216 C260 216 260 252 304 252" class="flow" marker-end="url(#arrow)"/>
+  <path d="M536 180 C580 180 580 208 624 208" class="flow" marker-end="url(#arrow)"/>
+  <path d="M536 252 C580 252 580 224 624 224" class="flow" marker-end="url(#arrow)"/>
+  <path d="M730 248 C730 288 730 296 730 328" class="flow" marker-end="url(#arrow)"/>
+  <path d="M568 404 H592" class="flow" marker-end="url(#arrow)"/>
+
+  <path d="M450 80 C450 136 140 136 140 184" class="pulse" pathLength="100"/>
+  <path d="M216 216 C260 216 260 180 304 180" class="pulse" pathLength="100" style="animation-delay:.8s"/>
+  <path d="M216 216 C260 216 260 252 304 252" class="pulse" pathLength="100" style="animation-delay:.8s"/>
+  <path d="M536 180 C580 180 580 208 624 208" class="pulse" pathLength="100" style="animation-delay:1.6s"/>
+  <path d="M536 252 C580 252 580 224 624 224" class="pulse" pathLength="100" style="animation-delay:1.6s"/>
+  <path d="M730 248 C730 288 730 296 730 328" class="pulse" pathLength="100" style="animation-delay:2.4s"/>
+
+  <rect x="328.5" y="24.5" width="243" height="55" rx="10" class="glass"/>
+  <rect x="328.5" y="24.5" width="243" height="55" rx="10" fill="url(#sheen)"/>
+  <rect x="344" y="24" width="212" height="1.5" fill="url(#spec)"/>
+  <g>
+    <radialGradient id="glow-yt" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FF0000" stop-opacity="1"/><stop offset="1" stop-color="#FF0000" stop-opacity="0"/></radialGradient>
+    <ellipse cx="360" cy="52" rx="42" ry="30" fill="url(#glow-yt)" opacity="0.30" filter="url(#blur-sm)"/>
+    <rect x="340.5" y="32.5" width="39" height="39" rx="11" fill="#18181B" stroke="url(#hair)" stroke-width="1"/>
+    <rect x="348" y="33" width="24" height="1" fill="url(#spec)"/>
+    <g transform="translate(347.4 39.4) scale(1.05)"><path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/><polygon fill="#FFFFFF" points="9.545,8.432 15.818,12 9.545,15.568"/></g>
+  </g>
+  <text x="396" y="58" class="sans t">YouTube URL</text>
+
+  <rect x="64.5" y="184.5" width="151" height="63" rx="10" class="node"/>
+  <text x="80" y="212" class="mono t">yt-dlp</text>
+  <text x="80" y="232" class="sans d">captions or audio</text>
+
+  <rect x="304.5" y="152.5" width="231" height="55" rx="10" class="node"/>
+  <text x="320" y="176" class="mono t">VTT cleanup</text>
+  <text x="320" y="196" class="sans d">captions found</text>
+
+  <rect x="304.5" y="224.5" width="231" height="55" rx="10" class="node"/>
+  <text x="320" y="248" class="mono t">faster-whisper</text>
+  <text x="320" y="268" class="sans d">no captions: local CPU</text>
+
+  <rect x="624.5" y="184.5" width="211" height="63" rx="10" class="glass"/>
+  <rect x="624.5" y="184.5" width="211" height="63" rx="10" fill="url(#sheen)"/>
+  <rect x="640" y="184" width="180" height="1.5" fill="url(#spec)"/>
+  <text x="640" y="212" class="mono t">transcript.txt</text>
+  <text x="640" y="232" class="sans d">+ slide_NNN.png</text>
+
+  <rect x="64.5" y="380.5" width="239" height="55" rx="10" class="node"/>
+  <text x="80" y="404" class="mono t">/vask</text>
+  <text x="80" y="424" class="sans d">router: picks the skill</text>
+
+  <rect x="328.5" y="380.5" width="239" height="55" rx="10" class="node"/>
+  <text x="344" y="404" class="mono t">/vrefine</text>
+  <text x="344" y="424" class="sans d">interview, then spec</text>
+
+  <rect x="592.5" y="380.5" width="239" height="55" rx="10" class="node"/>
+  <text x="608" y="404" class="mono t">/vdo</text>
+  <text x="608" y="424" class="sans d">spec to code and tests</text>
+
+  <rect x="64.5" y="444.5" width="239" height="55" rx="10" class="node"/>
+  <text x="80" y="468" class="mono t">/vqueue</text>
+  <text x="80" y="488" class="sans d">playlist to INDEX.md</text>
+
+  <rect x="328.5" y="444.5" width="239" height="55" rx="10" class="node"/>
+  <text x="344" y="468" class="mono t">/vcompare</text>
+  <text x="344" y="488" class="sans d">2+ videos, one verdict</text>
+
+  <rect x="592.5" y="444.5" width="239" height="55" rx="10" class="node"/>
+  <text x="608" y="468" class="mono t">/vsteps</text>
+  <text x="608" y="488" class="sans d">tutorial to numbered steps</text>
+</svg>
